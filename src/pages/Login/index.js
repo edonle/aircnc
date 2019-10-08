@@ -16,6 +16,7 @@ export default function Login({ history }) {
         //Grava no banco de dados do navegador
         localStorage.setItem('user', _id);
 
+        //History faz a navegação. Neste caso enviando o usuário para a rota /dashboard
         history.push('/dashboard');
     }
 
